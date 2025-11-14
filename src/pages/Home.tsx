@@ -2,6 +2,7 @@ import HeroSection from "../components/HeroSection";
 import PujaList from "../components/PujaList";
 import { useEffect } from "react";
 import AOS from "aos";
+import CowDonationSection from "../components/CowDonationSection";
 
 const Home = () => {
   useEffect(() => {
@@ -24,7 +25,7 @@ const Home = () => {
       data-aos="fade-up"
       className="text-3xl md:text-5xl font-bold text-white mb-4 font-devanagari"
     >
-      Perform Sacred Pujas in Guwahati
+      Perform Sacred Pujas all over India
     </h1>
 
     <p
@@ -56,7 +57,7 @@ const Home = () => {
         data-aos="fade-up"
       >
         <h2 className="text-2xl md:text-3xl font-semibold text-orange-700 mb-4">
-          Welcome to Puja Services, Guwahati
+          Welcome to Sanatan Dham Kendra
         </h2>
         <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto">
           We provide personalized Puja services for home, business, and temples
@@ -75,6 +76,8 @@ const Home = () => {
           <PujaList />
         </div>
       </section>
+
+      <CowDonationSection />
 
       {/* Contact Section */}
       <section
