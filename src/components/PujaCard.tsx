@@ -13,7 +13,7 @@ interface PujaCardProps {
 }
 
 const PujaCard: React.FC<PujaCardProps> = ({ puja }) => (
-  <Link to={`/service/${puja.id}`} className="block">
+  <Link to={`/puja/${puja.id}`} className="block">
     <div className="border rounded-xl bg-white shadow hover:shadow-lg transition transform hover:scale-[1.02] overflow-hidden">
       <img src={puja.image} alt={puja.name} className="w-full h-40 object-cover" />
       <div className="p-4">

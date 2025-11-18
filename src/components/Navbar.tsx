@@ -10,6 +10,10 @@ const Navbar = () => {
 
   const handleNavClick = (sectionId: string) => {
     setOpen(false);
+    if (sectionId == "appointment" || sectionId == "donate") {
+      navigate(`/${sectionId}`);
+      return;
+    }
     if (location.pathname === "/") {
       const section = document.getElementById(sectionId);
       if (section) section.scrollIntoView({ behavior: "smooth" });
@@ -56,9 +60,13 @@ const Navbar = () => {
   } absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent md:flex space-y-3 md:space-y-0 md:space-x-6 text-center md:text-left border-t md:border-none p-4 md:p-0 transition-all`}
 >
   {[
+    { name: "Home", id: ""},
+    { name: "Book an Appointment", id: "appointment"},
+    { name: "Donate", id: "donate"},
     { name: "About", id: "about" },
     { name: "Services", id: "services" },
     { name: "Contact", id: "contact" },
+
   ].map((item, index) => (
     <li key={index}>
       <button
@@ -73,6 +81,8 @@ const Navbar = () => {
       </button>
     </li>
   ))}
+
+
 </ul>
 
       </div>

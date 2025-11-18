@@ -1,15 +1,47 @@
 const HeroSection = () => (
-<section className="relative h-[70vh] bg-[url('/hero.jpg')] bg-cover bg-center flex items-center justify-center text-center text-white">
-  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-  <div className="relative z-10 px-6">
-    <h1 className="text-3xl md:text-5xl font-bold mb-3">Perform Sacred Pujas in Guwahati</h1>
-    <p className="text-lg md:text-xl mb-6">Experienced pandits for every auspicious occasion</p>
+<section
+  className="mt-8 relative h-[70vh] flex flex-col items-center justify-center text-center bg-cover bg-center"
+  style={{ backgroundImage: "url('/hero-pandit.jpeg')" }} // ✅ put your background image here
+>
+  {/* Gradient overlay for better text visibility */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/20"></div>
+
+  {/* Foreground content */}
+  <div className="relative z-10 px-6 max-w-2xl">
+    <h1
+      data-aos="fade-up"
+      className="text-3xl md:text-5xl font-bold text-white mb-4 font-devanagari"
+    >
+      Perform Sacred Pujas all over India
+    </h1>
+
+    <p
+      data-aos="fade-up"
+      data-aos-delay="150"
+      className="text-white text-lg md:text-xl mb-6 leading-relaxed"
+    >
+      Book authentic rituals with experienced pandits for every auspicious
+      occasion.
+    </p>
+
     <a
       href="https://wa.me/919876543210?text=I%20want%20to%20book%20a%20puja"
       target="_blank"
-      className="bg-green-500 hover:bg-green-600 px-5 py-3 rounded-lg font-medium shadow-md transition"
+      className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
+      data-aos="fade-up"
+      data-aos-delay="300"
     >
-      Talk on WhatsApp
+      Chat on WhatsApp
+    </a>
+    <div className="p-5"></div>
+    <a
+      href="https://wa.me/919876543210?text=I%20want%20to%20book%20a%20puja"
+      target="_blank"
+      className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      Book an Appointment
     </a>
   </div>
 </section>

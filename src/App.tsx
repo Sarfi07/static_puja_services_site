@@ -7,10 +7,13 @@ import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import ServiceDetails from "./pages/ServiceDetails";
+import PujaCardPage from "./pages/PujaCardPage";
 import WhatsAppButton from "./components/WhatsAppButton";
 import ScrollToTop from "./components/ScrollToTop";
 import DiyaFlareTransition from "./components/DiyaFlareTransition"; // 👈 import the new component
+import AppointmentPage from "./pages/AppointmentPage";
+import DonationPage from "./pages/DonationPage";
+import PaymentSuccess from "./pages/PaymentSuccess";
 
 const PageWrapper = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
@@ -48,7 +51,10 @@ const App = () => {
         <PageWrapper>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/service/:id" element={<ServiceDetails />} />
+            <Route path="/puja/:id" element={<PujaCardPage />} />
+            <Route path="/appointment" element={<AppointmentPage />} />
+            <Route path="/donate" element={<DonationPage />} />
+            <Route path="/payment-success" element={<PaymentSuccess />} />
           </Routes>
         </PageWrapper>
         <WhatsAppButton />
