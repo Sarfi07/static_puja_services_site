@@ -99,9 +99,10 @@ const Footer = () => {
       {/* Bottom section */}
       <div className="flex flex-col md:flex-row items-center justify-between text-sm text-orange-100">
         <p className="mb-3 md:mb-0">
-          © {new Date().getFullYear()} Puja Services, Guwahati. All rights
+          © {new Date().getFullYear()} Sanatan Dham Kendra, Guwahati. All rights
           reserved.
         </p>
+        <p>Developed by 20SA.</p>
         <button
           onClick={scrollToTop}
           className="flex items-center gap-1 bg-orange-500 hover:bg-orange-700 text-white px-4 py-2 rounded-full text-sm transition"

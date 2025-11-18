@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 
 const OWNER_EMAIL = "sanatan.dham.kendra@gmail.com"; // <-- replace with owner email
 
@@ -153,6 +154,12 @@ const AppointmentPage = () => {
           </p>
         </div>
 
+            <Link
+              to="/"
+              className="p-4 flex-1 border border-orange-600 text-orange-700 text-center py-3 rounded-lg font-medium hover:bg-orange-700 hover:text-white transition"
+            >
+              ← Back to Home
+            </Link>
       </div>
     </div>
   );

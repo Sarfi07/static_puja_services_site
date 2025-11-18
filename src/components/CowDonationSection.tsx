@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 
 const CowDonationSection = () => {
   useEffect(() => {
@@ -77,14 +78,13 @@ const CowDonationSection = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://wa.me/919876543210?text=I%20am%20interested%20in%20Cow%20Donation%20(Gau%20Daan)"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg shadow-md font-medium transition text-center"
-            >
-              📞 Contact on WhatsApp
-            </a>
+            <Link
+  to="/donate"
+  className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-md font-medium transition text-center"
+>
+  🐄 Donate for Gau Daan
+</Link>
+
             <a
               href="#contact"
               className="border border-orange-600 text-orange-700 px-6 py-3 rounded-lg shadow-sm font-medium hover:bg-orange-600 hover:text-white transition text-center"
