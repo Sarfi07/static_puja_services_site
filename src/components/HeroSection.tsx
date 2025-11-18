@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeroSection = () => (
 <section
   className="mt-8 relative h-[70vh] flex flex-col items-center justify-center text-center bg-cover bg-center"
@@ -34,15 +36,15 @@ const HeroSection = () => (
       Chat on WhatsApp
     </a>
     <div className="p-5"></div>
-    <a
-      href="https://wa.me/919876543210?text=I%20want%20to%20book%20a%20puja"
+    <Link
+      to="/appointment"
       target="_blank"
       className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
       data-aos="fade-up"
       data-aos-delay="300"
     >
       Book an Appointment
-    </a>
+    </Link>
   </div>
 </section>
 

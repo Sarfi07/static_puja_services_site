@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 
-const OWNER_EMAIL = "sanatan.dham.kendra@gmail.com"; // <-- replace with owner email
+const OWNER_EMAIL = "gesem33452@etramay.com"; // <-- replace with owner email
 
 const AppointmentPage = () => {
   useEffect(() => {
