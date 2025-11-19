@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+const w_number = import.meta.env.VITE_WHATSAPP_NUMBER;
+const w_number_formatted = w_number.replace(/\D/g, "");
+
 const HeroSection = () => (
 <section
   className="mt-8 relative h-[70vh] flex flex-col items-center justify-center text-center bg-cover bg-center"
@@ -27,7 +30,7 @@ const HeroSection = () => (
     </p>
 
     <a
-      href="https://wa.me/919876543210?text=I%20want%20to%20book%20a%20puja"
+      href={`https://wa.me/${w_number_formatted}?text=I%20want%20to%20book%20a%20puja`}
       target="_blank"
       className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
       data-aos="fade-up"

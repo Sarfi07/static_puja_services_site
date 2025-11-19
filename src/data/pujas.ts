@@ -5,7 +5,7 @@ export default [
   {
     id: "tantra-kamakhya-puja",
     name: "तंत्र कामख्या पूजा",
-    image: "/pujas/kamakhya.jpg",
+    image: "/pujas/puja1.jpg",
     shortDesc: "तांत्रिक बाधाओं, ग्रह कष्ट और नकारात्मक ऊर्जाओं से मुक्ति का शक्तिशाली उपाय।",
     description: `
       तंत्र कामख्या पूजा माँ कामख्या देवी की तांत्रिक शक्तियों से सम्पन्न अत्यंत प्राचीन और सिद्ध साधना है।
@@ -51,7 +51,7 @@ export default [
   {
     id: "baglamukhi-shatru-nashak-puja",
     name: "शत्रु नाशक बगलामुखी पूजा",
-    image: "/pujas/baglamukhi.jpg",
+    image: "/pujas/puja2.jpg",
     shortDesc: "शत्रु रोक, कोर्ट केस विजय और नकारात्मक प्रभावों से रक्षा के लिए शक्तिशाली अनुष्ठान।",
     description: `
       माता बगलामुखी की पूजा अत्यंत प्रभावी और तेज फलदायी मानी जाती है।
@@ -95,7 +95,7 @@ export default [
   {
     id: "vashikaran-mohini-puja",
     name: "वशीकरण मोहिनी पूजा",
-    image: "/pujas/mohini.jpg",
+    image: "/pujas/puja3.jpg",
     shortDesc: "प्रेम, आकर्षण, दांपत्य सुख और रिश्तों में सुधार हेतु सकारात्मक आध्यात्मिक साधना।",
     description: `
       मोहिनी वशीकरण पूजा पूरी तरह सकारात्मक, वैदिक और प्रेम व सामंजस्य बढ़ाने वाली पूजा है।

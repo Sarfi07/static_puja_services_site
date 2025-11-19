@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import AOS from "aos";
 
+const w_number = import.meta.env.VITE_WHATSAPP_NUMBER;
+const w_number_formatted = w_number.replace(/\D/g, "");
+
 const Footer = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -60,7 +63,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20book%20a%20Puja"
+                href={`https://wa.me/${w_number_formatted}?text=Hello%20I%20want%20to%20book%20a%20Puja`}
                 target="_blank"
                 className="hover:underline"
               >
@@ -74,12 +77,12 @@ const Footer = () => {
         <div className="text-center sm:text-left">
           <h3 className="text-lg font-semibold mb-3">Contact Info</h3>
           <ul className="space-y-2 text-orange-50 text-sm">
-            <li>📍 TODO</li>
-            <li>📞 +91 TODO</li>
-            <li>📧 contact@pujaservices.in</li>
+            <li>📍  Bharalumukh, Guwhati, Assam</li>
+            <li>📞 +91 93655 51016</li>
+            <li>📧 Sanatandhamkendra999@gmail.com</li>
           </ul>
           <a
-            href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20book%20a%20Puja"
+            href={`https://wa.me/${w_number_formatted}?text=Hello%20I%20want%20to%20book%20a%20Puja`}
             target="_blank"
             className="inline-flex items-center gap-2 mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition"
           >

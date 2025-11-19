@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 
-const OWNER_EMAIL = "gesem33452@etramay.com"; // <-- replace with owner email
+const OWNER_EMAIL = import.meta.env.VITE_OWNER_EMAIL;
 
 const AppointmentPage = () => {
   useEffect(() => {
@@ -143,15 +143,16 @@ const AppointmentPage = () => {
           {/* QR IMAGE */}
           <div className="flex justify-center">
             <img
-              src="/upi-qr.png"
+              src="/upi-qr.jpeg"
               alt="Payment QR"
               className="w-48 h-48 rounded-xl shadow-lg border border-gray-300"
             />
           </div>
 
           <p className="text-center text-gray-700 mt-4 font-medium">
-            UPI ID: <span className="text-orange-700">yourupiid@upi</span>
+            UPI ID: <span className="text-orange-700">{import.meta.env.VITE_UPI_ID}</span>
           </p>
+          <br />
         </div>
 
             <Link

@@ -9,6 +9,9 @@ const Home = () => {
     AOS.init({ duration: 800, once: true });
   }, []);
 
+  const w_number = import.meta.env.VITE_WHATSAPP_NUMBER;
+  const w_number_formatted = w_number.replace(/\D/g, "");
+
   return (
     <main className="bg-orange-50 text-gray-800">
       {/* Hero Section */}
@@ -57,7 +60,7 @@ const Home = () => {
           Reach out on WhatsApp or call us for personalized Puja bookings.
         </p>
         <a
-          href="https://wa.me/919876543210?text=Hello%20I%20would%20like%20to%20book%20a%20puja"
+          href={`https://wa.me/${w_number_formatted}?text=Hello%20I%20would%20like%20to%20book%20a%20puja`}
           target="_blank"
           className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
         >

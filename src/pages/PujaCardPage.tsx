@@ -6,6 +6,8 @@ import pujas from "../data/pujas";
 const PujaCardPage = () => {
   const { id } = useParams();
   const puja = pujas.find((p) => p.id === id);
+  const w_number = import.meta.env.VITE_WHATSAPP_NUMBER;
+  const w_number_formatted = w_number.replace(/\D/g, "");
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -117,7 +119,7 @@ const PujaCardPage = () => {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-10" data-aos="fade-up">
             <a
-              href={`https://wa.me/919876543210?text=I%20want%20to%20book%20${encodeURIComponent(
+              href={`https://wa.me/${w_number_formatted}?text=I%20want%20to%20book%20${encodeURIComponent(
                 puja.name
               )}`}
               target="_blank"
