@@ -47,15 +47,16 @@ const DonationPage = () => {
 
           <div className="flex justify-center mb-4">
             <img
-              src="/upi-qr.png"
+              src="/upi-qr.jpeg"
               alt="UPI QR"
               className="w-48 h-48 rounded-xl border border-gray-300 shadow-lg"
             />
           </div>
 
           <p className="text-center text-gray-700 font-medium">
-            UPI ID: <span className="text-orange-700">yourupiid@upi</span>
+            UPI ID: <span className="text-orange-700">{import.meta.env.VITE_UPI_ID}</span>
           </p>
+          <br />
         </section>
                   <Link
               to="/"
