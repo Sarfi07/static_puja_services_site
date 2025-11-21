@@ -22,17 +22,20 @@ const PujaCardPage = () => {
   }
 
   return (
-    <main className="bg-orange-50 min-h-screen py-14 px-6 md:px-12">
+    <main className="mt-4 bg-orange-50 min-h-screen py-14 px-6 md:px-12">
       <div
-        className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden"
+        className="pt-4 max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden"
         data-aos="fade-up"
       >
         {/* Puja Image */}
-        <img
-          src={puja.image}
-          alt={puja.name}
-          className="w-full h-64 md:h-80 object-cover"
-        />
+        <div className="rounded-xl overflow-hidden">
+  <img
+    src={puja.image}
+    alt={puja.name}
+    className="w-full h-64 md:h-80 object-contain"
+  />
+</div>
+
 
         {/* Text Content */}
         <div className="p-8 md:p-10">

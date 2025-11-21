@@ -63,9 +63,8 @@ const Navbar = () => {
     { name: "Home", id: ""},
     { name: "Book an Appointment", id: "appointment"},
     { name: "Donate", id: "donate"},
-    { name: "About", id: "about" },
+    { name: "Astrology", id: "astrology" },
     { name: "Services", id: "services" },
-    { name: "Contact", id: "contact" },
 
   ].map((item, index) => (
     <li key={index}>

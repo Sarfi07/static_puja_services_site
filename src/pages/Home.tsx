@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import CowDonationSection from "../components/CowDonationSection";
 import HeroSection from "../components/HeroSection";
+import AstrologySection from "../components/AstrologySection";
+import DevoteeTrustSection from "../components/DevoteeTrustSection";
 
 const Home = () => {
   useEffect(() => {
@@ -17,6 +19,11 @@ const Home = () => {
       {/* Hero Section */}
       <HeroSection />
 
+      {/* Devotee Section */}
+      <DevoteeTrustSection />
+
+      {/* { Astrology Section} */}
+      <AstrologySection />
 
       {/* About / Info Section */}
       <section
