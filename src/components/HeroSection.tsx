@@ -5,8 +5,8 @@ const w_number_formatted = w_number.replace(/\D/g, "");
 
 const HeroSection = () => (
 <section
-  className="mt-8 relative h-[70vh] flex flex-col items-center justify-center text-center bg-cover bg-center"
-  style={{ backgroundImage: "url('/hero-pandit.jpeg')" }} // ✅ put your background image here
+  className="mt-16 relative h-[80vh] flex flex-col items-center justify-center text-center bg-cover lg:w-[60vw] lg:m-auto lg:mt-18 bg-no-repeat bg-center"
+  style={{ backgroundImage: "url('/hero-family.jpeg')" }} // ✅ put your background image here
 >
   {/* Gradient overlay for better text visibility */}
   <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/20"></div>
