@@ -41,7 +41,6 @@ const HeroSection = () => (
     <div className="p-5"></div>
     <Link
       to="/appointment"
-      target="_blank"
       className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
       data-aos="fade-up"
       data-aos-delay="300"
